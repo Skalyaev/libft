@@ -12,17 +12,17 @@
 
 #include "../include/libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void *ft_calloc(size_t nmemb, size_t size)
 {
-	void	*p;
-	size_t	total_mem;
-	char	*fill;
+        void *p;
+        size_t total_mem;
+        char *fill;
 
-	total_mem = nmemb * size;
-	if (!(p = malloc(total_mem)))
-		return (NULL);
-	fill = p;
-	while (total_mem--)
-		*fill++ = 0x0;
-	return (p);
+        total_mem = nmemb * size;
+        if (!(p = malloc(total_mem)))
+                return (NULL);
+        fill = p;
+        while (total_mem--)
+                *fill++ = 0x0;
+        return (p);
 }
