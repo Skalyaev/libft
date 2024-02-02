@@ -8,7 +8,7 @@
 *However, when working on a new project, don’t forget to ensure the functions used in your library are allowed in the project guidelines.*
 
 ## Table of Contents
-*This project is about coding a C library. It will contain a lot of general purpose functions your programs will rely upon.*
+> *This project is about coding a C library. It will contain a lot of general purpose functions your programs will rely upon.*
 
 - [x] lstnew
 - [x] strmapi
