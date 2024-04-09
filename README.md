@@ -1,5 +1,5 @@
-# Libft
-> Ce projet vise à vous faire coder en C une bibliothèque de fonctions courantes que vous pourrez utiliser pour vos futurs projets.
+# libft
+> *Ce projet vise à vous faire coder en C une bibliothèque de fonctions courantes que vous pourrez utiliser pour vos futurs projets.*
 
 ## Checklist
 - [x] atoi - Convertir une chaîne en entier.
@@ -34,10 +34,10 @@
 - [x] strchr - Rechercher un caractère dans une chaîne.
 - [x] strdup - Dupliquer une chaîne.
 - [x] strjoin - Joindre deux chaînes.
-- [x] strlcat - Concaténer des chaînes avec une taille limitée. 
+- [x] strlcat - Concaténer des chaînes avec une taille limitée.
 - [x] strlcpy - Copier des chaînes avec une taille limitée.
 - [x] strlen - Calculer la longueur d'une chaîne.
-- [x] strmapi - Appliquer une fonction à chaque caractère d'une chaîne.   
+- [x] strmapi - Appliquer une fonction à chaque caractère d'une chaîne.
 - [x] strncmp - Comparer deux chaînes.
 - [x] strnstr - Localiser une sous-chaîne dans une chaîne.
 - [x] strrchr - Rechercher un caractère dans une chaîne.
@@ -46,23 +46,42 @@
 - [x] tolower - Convertir un caractère en minuscule.
 - [x] toupper - Convertir un caractère en majuscule.
 
-## Usage
+## Install
 ```bash
-sudo apt update -y && sudo apt install -y\
-    git
-    make
-    ar
-git clone https://github.com/Skalyaeve/libft.git
-cd libft && make
-
-mkdir -p $HOME/.local/lib
-mkdir -p $HOME/.local/include
-mkdir -p $HOME/.local/src/libft
-cp libft.a $HOME/.local/lib
-cp includes/libft.h $HOME/.local/include
-cp src/* $HOME/.local/src/libft
+sudo apt update -y
+sudo apt install -y ar
+sudo apt install -y make
+sudo apt install -y git
 ```
-To link the library with gcc, use:
+```bash
+mkdir -p $HOME/.local/lib
+mkdir -p $HOME/.local/src
+mkdir -p $HOME/.local/include
+```
+```bash
+link=Skalyaeve/libft
+name=libft
+
+git clone https://github.com/$link.git $name
+cd $name && make && make clean
+
+ln -s $PWD/$name.a $HOME/.local/lib/$name.a
+ln -s $PWD/src $HOME/.local/src/$name
+ln -s $PWD/include $HOME/.local/include/$name
+```
+
+## Usage
+- `gcc` flags:
 ```bash
 -L$HOME/.local/lib -lft
+```
+
+## Uninstall
+```bash
+name=libft
+
+rm -r $name
+rm $HOME/.local/lib/$name.a
+rm $HOME/.local/src/$name
+rm $HOME/.local/include/$name
 ```
