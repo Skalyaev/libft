@@ -45,3 +45,24 @@
 - [x] substr - Extraire une partie d'une chaîne.
 - [x] tolower - Convertir un caractère en minuscule.
 - [x] toupper - Convertir un caractère en majuscule.
+
+## Usage
+```bash
+sudo apt update -y && sudo apt install -y\
+    git
+    make
+    ar
+git clone https://github.com/Skalyaeve/libft.git
+cd libft && make
+
+mkdir -p $HOME/.local/lib
+mkdir -p $HOME/.local/include
+mkdir -p $HOME/.local/src/libft
+cp libft.a $HOME/.local/lib
+cp includes/libft.h $HOME/.local/include
+cp src/* $HOME/.local/src/libft
+```
+To link the library with gcc, use:
+```bash
+-L$HOME/.local/lib -lft
+```
