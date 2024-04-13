@@ -50,7 +50,7 @@
 - [x] **`tolower`** Convertir un caractère en minuscule
 - [x] **`toupper`** Convertir un caractère en majuscule
 
-## Installer
+## Install
 ```bash
 sudo apt update -y
 sudo apt install -y ar
@@ -73,18 +73,19 @@ ln -s $PWD/src $HOME/.local/src/$name
 ln -s $PWD/include $HOME/.local/include/$name
 ```
 
-## Utiliser
+## Usage
 - `gcc` flags:
 ```bash
 -L $HOME/.local/lib -lft
 ```
 
-## Désinstaller
+## Uninstall
 ```bash
 name=libft
 
-rm -r $name
+rm -rf $name
 rm $HOME/.local/lib/$name.a
 rm $HOME/.local/src/$name
 rm $HOME/.local/include/$name
 ```
+
