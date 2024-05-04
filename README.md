@@ -87,4 +87,3 @@ rm $HOME/.local/lib/$name.a
 rm $HOME/.local/src/$name
 rm $HOME/.local/include/$name
 ```
-
