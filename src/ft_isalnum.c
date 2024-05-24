@@ -1,18 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: anguinau <anguinau@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 05:14:32 by anguinau          #+#    #+#             */
-/*   Updated: 2020/11/21 23:15:40 by anguinau         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../include/libft.h"
 
 int ft_isalnum(int c)
 {
-        return (ft_isalpha(c) || ft_isdigit(c));
+    return (ft_isalpha(c) || ft_isdigit(c));
 }

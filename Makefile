@@ -1,16 +1,16 @@
-NAME=libft.a
+NAME = libft.a
 
-CC=gcc
-CFLAGS=-Wall -Wextra -Werror
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
 
-SRC_EXT=c
-SRC_DIR=src
-SRC=$(shell find $(SRC_DIR) -type f -name "*.$(SRC_EXT)")
+SRC_EXT = c
+SRC_DIR = src
+SRC = $(shell find $(SRC_DIR) -type f -name *.$(SRC_EXT))
 
-OBJ=$(subst $(SRC_DIR),$(OBJ_DIR),$(SRC:.c=.o))
-OBJ_DIR=obj
+OBJ = $(subst $(SRC_DIR),$(OBJ_DIR),$(SRC:.c=.o))
+OBJ_DIR = obj
 
-RM=rm -rf
+RM = rm -rf
 
 all: ${NAME}
 
