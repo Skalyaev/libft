@@ -1,11 +1,13 @@
 # <p align="center">libft</p>
-> *Ce projet vise à vous faire coder en C une bibliothèque de fonctions courantes que vous pourrez utiliser pour vos futurs projets.*
+
+> _Ce projet vise à vous faire coder en C une bibliothèque de fonctions courantes que vous pourrez utiliser pour vos futurs projets._
 >
-> *La programmation en C peut être laborieuse sans accès aux fonctions courantes, donc prenons le temps de réécrire, comprendre et utiliser ces fonctions dans ce projet, afin de pouvoir efficacement les réutiliser dans nos projets futurs en C.*
+> _La programmation en C peut être laborieuse sans accès aux fonctions courantes, donc prenons le temps de réécrire, comprendre et utiliser ces fonctions dans ce projet, afin de pouvoir efficacement les réutiliser dans nos projets futurs en C._
 >
-> *Enrichissez votre libft progressivement tout au long de l'année, mais assurez-vous toujours de vérifier les fonctions autorisées pour chaque projet à venir !*
+> _Enrichissez votre libft progressivement tout au long de l'année, mais assurez-vous toujours de vérifier les fonctions autorisées pour chaque projet à venir !_
 
 ## Checklist
+
 - [x] **`atoi`** Convertir une chaîne en entier
 - [x] **`bzero`** Écrire des octets de valeur zéro dans un bloc d'octets
 - [x] **`calloc`** Allocation et libération dynamiques de mémoire
@@ -51,16 +53,19 @@
 - [x] **`toupper`** Convertir un caractère en majuscule
 
 ## Install
+
 ```bash
 sudo apt update -y
 sudo apt install -y ar
 sudo apt install -y make
 ```
+
 ```bash
 mkdir -p $HOME/.local/lib
 mkdir -p $HOME/.local/src
 mkdir -p $HOME/.local/include
 ```
+
 ```bash
 name=libft
 
@@ -73,12 +78,15 @@ ln -s $PWD/include $HOME/.local/include/$name
 ```
 
 ## Usage
+
 - `gcc` flags:
+
 ```bash
 -L $HOME/.local/lib -lft
 ```
 
 ## Uninstall
+
 ```bash
 name=libft
 
@@ -87,4 +95,3 @@ rm $HOME/.local/lib/$name.a
 rm $HOME/.local/src/$name
 rm $HOME/.local/include/$name
 ```
-
